@@ -1,27 +1,27 @@
 <footer class="w-full pt-20 mt-14">
     <div class="container grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-36">
         <div>
-            <img class="mb-10" src="{{asset("assets/images/B-Uni.png")}}" alt="Logo B-Universitas" />
-            <!-- <img class="mb-10"
-                src="{{$datafooter->image ? Storage::url($datafooter->image) : asset("assets/images/B-Uni.png")}}"
-                alt="Logo B-Universitas" /> -->
+            {{-- <img class="mb-10" src="{{ asset('assets/images/B-Uni.png') }}" alt="Logo B-Universitas" /> --}}
+            <img class="mb-10"
+                src="{{ $datafooter->image ? Storage::url($datafooter->image) : asset('/assets/images/B-Uni.png') }}"
+                alt="Logo B-Universitas" />
             <p class="mb-6 text-sm text-medium text-xneutral-200 font-poppins">
                 Lihat Perkembangan kami diakun sosial media
             </p>
             <div class="flex items-center gap-11">
-                <a href="{{$datafooter->link_instagram ?? "null"}}"
+                <a href="{{ $datafooter->link_instagram ?? 'null' }}"
                     class="grid w-8 h-8 rounded-full place-content-center bg-primary-200">
                     <i class="text-lg bi bi-instagram text-xneutral-0"></i>
                 </a>
-                <a href="{{$datafooter->link_youtube ?? "null"}}"
+                <a href="{{ $datafooter->link_youtube ?? 'null' }}"
                     class="grid w-8 h-8 rounded-full place-content-center bg-primary-200">
                     <i class="text-lg bi bi-youtube text-xneutral-0"></i>
                 </a>
-                <a href="{{$datafooter->link_linkedin ?? "null"}}"
+                <a href="{{ $datafooter->link_linkedin ?? 'null' }}"
                     class="grid w-8 h-8 rounded-full place-content-center bg-primary-200">
                     <i class="text-sm bi bi-linkedin text-xneutral-0"></i>
                 </a>
-                <a href="{{$datafooter->link_facebook ?? "null"}}"
+                <a href="{{ $datafooter->link_facebook ?? 'null' }}"
                     class="grid w-8 h-8 rounded-full place-content-center bg-primary-200">
                     <i class="text-lg bi bi-facebook text-xneutral-0"></i>
                 </a>
@@ -35,19 +35,19 @@
                 <div class="flex gap-4">
                     <i class="bi bi-geo-alt-fill text-xneutral-200"></i>
                     <p class="text-sm font-poppins text-xneutral-200">
-                        {{$datafooter->alamat ?? "null"}}
+                        {{ $datafooter->alamat ?? 'null' }}
                     </p>
                 </div>
                 <div class="flex gap-4">
                     <i class="bi bi-envelope text-xneutral-200"></i>
                     <p class="text-sm font-poppins text-xneutral-200">
-                        {{$datafooter->email ?? "null"}}
+                        {{ $datafooter->email ?? 'null' }}
                     </p>
                 </div>
                 <div class="flex gap-4">
                     <i class="bi bi-whatsapp text-xneutral-200"></i>
                     <p class="text-sm font-poppins text-xneutral-200">
-                        {{$datafooter->wa ?? "null"}}
+                        {{ $datafooter->wa ?? 'null' }}
                     </p>
                 </div>
             </div>
