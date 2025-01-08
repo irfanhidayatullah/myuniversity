@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>B-University</title>
+
+        <link rel="stylesheet" href="output.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <header class="fixed top-0 z-50 w-full bg-white">
+            <nav class="container flex items-center justify-between py-5">
+                <div>
+                    <a href="index.html">
+                        <img
+                            src="../assets/images/B-Uni.png"
+                            height="60"
+                            class="max-h-[60px]"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <ul
+                    class="items-center hidden list-none md:flex gap-9 font-montserrat"
+                >
+                    <li class="relative flex items-center h-full group">
+                        <div
+                            class="flex items-center gap-1.5 x-dropdown-button cursor-pointer peer"
+                        >
+                            <span class="font-semibold">Tentang Kami</span>
+                            <i
+                                class="transition-all bi bi-chevron-down group-hover:rotate-180"
+                            ></i>
+                        </div>
+                        <div
+                            class="absolute hidden overflow-hidden shadow-xl peer-hover:block hover:block group-hover:block rounded-xl top-full w-fit"
+                        >
+                            <div class="pt-12">
+                                <ul
+                                    class="p-3 pl-8 list-disc bg-white text-nowrap rounded-xl"
+                                >
+                                    <li>
+                                        <a
+                                            href="sejarah.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Sejarah</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="visimisi.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Visi & Misi</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="sambutan.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Sambutan Rektor</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="fasilitas.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Fasilitas</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sdm.html" class="font-semibold">SDM</a>
+                    </li>
+                    <li class="relative flex items-center h-full group">
+                        <div
+                            class="flex items-center gap-1.5 x-dropdown-button cursor-pointer peer"
+                        >
+                            <span class="font-semibold">Akademik</span>
+                            <i
+                                class="transition-all bi bi-chevron-down group-hover:rotate-180"
+                            ></i>
+                        </div>
+                        <div
+                            class="absolute hidden overflow-hidden -translate-x-1/2 shadow-xl rounded-xl peer-hover:block hover:block group-hover:block top-full w-fit"
+                        >
+                            <div class="pt-12">
+                                <div
+                                    class="flex gap-4 px-6 py-3 bg-white rounded-xl"
+                                >
+                                    <div class="flex-1 px-4">
+                                        <span
+                                            class="block h-10 mb-4 font-semibold text-nowrap"
+                                            >ILMU KESEHATAN</span
+                                        >
+                                        <ul
+                                            class="space-y-1 list-disc text-nowrap"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 KEPERAWATAN</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 KEBIDANAN</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 FARMASI</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 ADMINISTRASI RUMAH
+                                                    SAKIT</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >D3 KEBIDANAN</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >D3 FISIOTERAPI</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >D3 FARMASI</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-1 px-4">
+                                        <span
+                                            class="block h-10 mb-4 font-semibold text-nowrap"
+                                            >EKONOMI DAN BISNIS</span
+                                        >
+                                        <ul
+                                            class="space-y-1 list-disc text-nowrap"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 MANAJEMEN</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 AKUNTANSI</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 EKONOMI SYARIAH</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 KEWIRAUSAHAAN</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-1 px-4">
+                                        <span
+                                            class="block h-10 mb-4 font-semibold"
+                                            >SAINS, TEKNOLOGI, DAN
+                                            PENDIDIKAN</span
+                                        >
+                                        <ul
+                                            class="space-y-1 list-disc text-nowrap"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 PENDIDIKAN GURU SD</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 BIOLOGI</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 FISIKA</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 TEKNIK KOMPUTER</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 TEKNIK INDUSTRI</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block w-full py-1 pl-2 pr-8"
+                                                    >S1 TEKNIK INFORMATIKA</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="pengumuman.html" class="font-semibold"
+                            >Pengumuman</a
+                        >
+                    </li>
+                </ul>
+                <div class="hidden md:flex">
+                    <a
+                        href="pendaftaran.html"
+                        class="px-6 py-[14px] font-montserrat font-semibold text-xneutral-0 bg-primary-200 rounded-full"
+                        >Pendaftaran</a
+                    >
+                </div>
+
+                <!-- Mobile menu toggle -->
+                <button
+                    type="button"
+                    class="relative inline-flex items-center justify-center p-2 rounded-md md:hidden text-xneutral-300 hover:bg-xneutral-100 hover:text-xneutral-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
+                >
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                        class="block w-6 h-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                    </svg>
+                    <svg
+                        class="hidden w-6 h-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="hidden shadow-xl" id="mobile-menu">
+                <ul class="px-4 pt-2 pb-3 space-y-2">
+                    <li class="w-full h-full">
+                        <div
+                            class="flex items-center w-full justify-between gap-1.5 x-dropdown-button cursor-pointer"
+                            data-target="menu1"
+                        >
+                            <span class="font-semibold">Tentang Kami</span>
+                            <i class="transition-all bi bi-chevron-down"></i>
+                        </div>
+                        <div class="hidden x-dropdown-menu" id="menu1">
+                            <div>
+                                <ul
+                                    class="px-3 bg-white text-nowrap rounded-xl"
+                                >
+                                    <li>
+                                        <a
+                                            href="sejarah.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Sejarah</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="visimisi.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Visi & Misi</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="sambutan.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Sambutan Rektor</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="fasilitas.html"
+                                            class="block w-full py-1 pl-2 pr-8"
+                                            >Fasilitas</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sdm.html" class="font-semibold">SDM</a>
+                    </li>
+                    <li class="w-full h-full">
+                        <div
+                            class="flex items-center w-full justify-between gap-1.5 x-dropdown-button cursor-pointer"
+                            data-target="menu2"
+                        >
+                            <span class="font-semibold">Akademik</span>
+                            <i class="transition-all bi bi-chevron-down"></i>
+                        </div>
+                        <div
+                            class="hidden w-full mt-4 x-dropdown-menu"
+                            id="menu2"
+                        >
+                            <div class="space-y-4">
+                                <div class="pl-3">
+                                    <span
+                                        class="flex justify-between mb-3 font-semibold text-nowrap x-dropdown-button"
+                                        data-target="menu-ilmu-kesehatan"
+                                        >ILMU KESEHATAN
+                                        <i
+                                            class="transition-all bi bi-chevron-down"
+                                        ></i
+                                    ></span>
+                                    <ul
+                                        id="menu-ilmu-kesehatan"
+                                        class="hidden space-y-1 x-dropdown-menu text-nowrap"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 KEPERAWATAN</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 KEBIDANAN</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 FARMASI</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 ADMINISTRASI RUMAH SAKIT</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >D3 KEBIDANAN</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >D3 FISIOTERAPI</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >D3 FARMASI</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pl-3">
+                                    <span
+                                        class="flex justify-between mb-3 font-semibold text-nowrap x-dropdown-button"
+                                        data-target="menu-ekonomi-bisnis"
+                                        >EKONOMI DAN BISNIS
+                                        <i
+                                            class="transition-all bi bi-chevron-down"
+                                        ></i
+                                    ></span>
+                                    <ul
+                                        id="menu-ekonomi-bisnis"
+                                        class="hidden space-y-1 x-dropdown-menu text-nowrap"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 MANAJEMEN</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 AKUNTANSI</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 EKONOMI SYARIAH</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 KEWIRAUSAHAAN</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pl-3">
+                                    <span
+                                        class="flex justify-between mb-3 font-semibold text-nowrap x-dropdown-button"
+                                        data-target="menu-saintekdik"
+                                        >SAINS, TEKNOLOGI, DAN PENDIDIKAN
+                                        <i
+                                            class="transition-all bi bi-chevron-down"
+                                        ></i
+                                    ></span>
+                                    <ul
+                                        id="menu-saintekdik"
+                                        class="hidden space-y-1 x-dropdown-menu text-nowrap"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 PENDIDIKAN GURU SD</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 BIOLOGI</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 FISIKA</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 TEKNIK KOMPUTER</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 TEKNIK INDUSTRI</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="block w-full py-1 pl-2 pr-8"
+                                                >S1 TEKNIK INFORMATIKA</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="pengumuman.html" class="font-semibold"
+                            >Pengumuman</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- END OF NAVIGATION -->
+
+        <!-- MAIN SECTION -->
+        <article class="container mt-28">
+            <h1
+                class="text-xl font-semibold text-xneutral-400 font-montserrat sm:text-2xl"
+            >
+                Data Dosen
+            </h1>
+            <p
+                class="text-sm font-semibold text-xneutral-200 font-montserrat sm:text-base"
+            >
+                Dosen berkompeten dibidangnya
+            </p>
+
+            <div class="mt-10 space-y-11">
+                <div
+                    class="flex flex-col items-center gap-8 sm:flex-row sm:gap-16"
+                >
+                    <img
+                        class="sm:col-span-2"
+                        src="/assets/images/orang-1.png"
+                        alt="Elfan Efendi, S.Kom., M.Kom."
+                    />
+                    <div class="sm:col-span-10 font-montserrat">
+                        <h3
+                            class="text-base font-semibold sm:text-lg text-primary-200"
+                        >
+                            Elfan Efendi, S.Kom., M.Kom.
+                        </h3>
+                        <table
+                            class="mt-5 text-xs font-medium table-auto sm:table-fixed sm:text-sm text-xneutral-300"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">NIDN</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>0728089410</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">
+                                        Pendidikan
+                                    </td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>
+                                        D4 Teknik Informatika - POLINEMA | S2
+                                        Teknik Informatika - ITS
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Jabatan</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>Junior Lecturer</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Email</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>elfanefendi88@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Topik</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>Software Engineering</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center gap-8 sm:flex-row sm:gap-16"
+                >
+                    <img
+                        class="sm:col-span-2"
+                        src="/assets/images/orang-5.png"
+                        alt="Ahmad Hafidh Ayatullah, M.Kom"
+                    />
+                    <div class="sm:col-span-10 font-montserrat">
+                        <h3
+                            class="text-base font-semibold sm:text-lg text-primary-200"
+                        >
+                            Ahmad Hafidh Ayatullah, M.Kom
+                        </h3>
+                        <table
+                            class="mt-5 text-xs font-medium table-auto sm:table-fixed sm:text-sm text-xneutral-300"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">NIDN</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>0728089411</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">
+                                        Pendidikan
+                                    </td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>
+                                        D4 Teknik Informatika - POLINEMA | S2
+                                        Teknik Informatika - ITS
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Jabatan</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>
+                                        Junior Lecturer dan PJ Kerjasama Prodi
+                                        Teknik Informatika
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Email</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>ahmad.hafidhayatullah@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Topik</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>
+                                        Artificial Intelligence, Machine
+                                        Learning, Deep Learning
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center gap-8 sm:flex-row sm:gap-16"
+                >
+                    <img
+                        class="sm:col-span-2"
+                        src="/assets/images/orang-4.png"
+                        alt="Della Reno Rinaldi, S.Kom., M.Sc."
+                    />
+                    <div class="sm:col-span-10 font-montserrat">
+                        <h3
+                            class="text-base font-semibold sm:text-lg text-primary-200"
+                        >
+                            Della Reno Rinaldi, S.Kom., M.Sc.
+                        </h3>
+                        <table
+                            class="mt-5 text-xs font-medium table-auto sm:table-fixed sm:text-sm text-xneutral-300"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">NIDN</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>0728089412</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">
+                                        Pendidikan
+                                    </td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>
+                                        S1 Teknik Informatika - ITS | S2 Teknik
+                                        Informatika - UGM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Jabatan</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>
+                                        Junior Lecturer dan Unit Penjaminan Mutu
+                                        Prodi Teknik Informatika
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Email</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>della@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Topik</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>Network Security</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center gap-8 sm:flex-row sm:gap-16"
+                >
+                    <img
+                        class="sm:col-span-2"
+                        src="/assets/images/orang-6.png"
+                        alt="Taufan Fadhilah Iskandar, S.Kom., M.Kom."
+                    />
+                    <div class="sm:col-span-10 font-montserrat">
+                        <h3
+                            class="text-base font-semibold sm:text-lg text-primary-200"
+                        >
+                            Taufan Fadhilah Iskandar, S.Kom., M.Kom.
+                        </h3>
+                        <table
+                            class="mt-5 text-xs font-medium table-auto sm:table-fixed sm:text-sm text-xneutral-300"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">NIDN</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>0728089413</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">
+                                        Pendidikan
+                                    </td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>
+                                        S1 Teknik Informatika Telkom University
+                                        | S2 Informatika ITS
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Jabatan</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>Asisten Ahli</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Email</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>taufan@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Topik</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>Keamanan Data dan Data Mining</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="container mt-[150px]">
+            <h1
+                class="text-xl font-semibold text-xneutral-400 font-montserrat sm:text-2xl"
+            >
+                Tenaga Kependidikan
+            </h1>
+            <p
+                class="text-sm font-semibold text-xneutral-200 font-montserrat sm:text-base"
+            >
+                Tendik B-University
+            </p>
+
+            <div class="mt-10 space-y-11">
+                <div
+                    class="flex flex-col items-center gap-8 sm:flex-row sm:gap-16"
+                >
+                    <img
+                        class="sm:col-span-2"
+                        src="/assets/images/orang-7.png"
+                        alt="Muhamad Arif Hidayat, S.Kom"
+                    />
+                    <div class="sm:col-span-10 font-montserrat">
+                        <h3
+                            class="text-base font-semibold sm:text-lg text-primary-200"
+                        >
+                            Muhamad Arif Hidayat, S.Kom
+                        </h3>
+                        <table
+                            class="w-full mt-5 text-xs font-medium table-fixed sm:table-fixed sm:text-sm text-xneutral-300"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">NIP</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>0728089414</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Jabatan</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>Admin Program Studi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center gap-8 sm:flex-row sm:gap-16"
+                >
+                    <img
+                        class="sm:col-span-2"
+                        src="/assets/images/orang-8.png"
+                        alt="Marta Ulina"
+                    />
+                    <div class="sm:col-span-10 font-montserrat">
+                        <h3
+                            class="text-base font-semibold sm:text-lg text-primary-200"
+                        >
+                            Marta Ulina
+                        </h3>
+                        <table
+                            class="w-full mt-5 text-xs font-medium table-fixed sm:table-fixed sm:text-sm text-xneutral-300"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">NIP</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>0728089415</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-24 py-1 sm:w-48">Jabatan</td>
+                                    <td class="w-4 sm:w-12">:</td>
+                                    <td>Staff IT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- FOOTER SECTION -->
+        <footer class="w-full pt-20 mt-14">
+            <div
+                class="container grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-36"
+            >
+                <div>
+                    <img
+                        class="mb-10"
+                        src="/assets/images/B-Uni.png"
+                        alt="Logo B-Universitas"
+                    />
+                    <p
+                        class="mb-6 text-sm text-medium text-xneutral-200 font-poppins"
+                    >
+                        Lihat Perkembangan kami diakun sosial media
+                    </p>
+                    <div class="flex items-center gap-11">
+                        <a
+                            href="#"
+                            class="grid w-8 h-8 rounded-full place-content-center bg-primary-200"
+                        >
+                            <i
+                                class="text-lg bi bi-instagram text-xneutral-0"
+                            ></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="grid w-8 h-8 rounded-full place-content-center bg-primary-200"
+                        >
+                            <i
+                                class="text-lg bi bi-youtube text-xneutral-0"
+                            ></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="grid w-8 h-8 rounded-full place-content-center bg-primary-200"
+                        >
+                            <i
+                                class="text-sm bi bi-linkedin text-xneutral-0"
+                            ></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="grid w-8 h-8 rounded-full place-content-center bg-primary-200"
+                        >
+                            <i
+                                class="text-lg bi bi-facebook text-xneutral-0"
+                            ></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4
+                        class="mb-10 text-lg font-semibold font-poppins text-xneutral-300"
+                    >
+                        Contact us
+                    </h4>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <i class="bi bi-geo-alt-fill text-xneutral-200"></i>
+                            <p class="text-sm font-poppins text-xneutral-200">
+                                Jl. Teknik Kimia, Keputih, Kec. Sukolilo,
+                                Surabaya, Jawa Timur 60111
+                            </p>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="bi bi-envelope text-xneutral-200"></i>
+                            <p class="text-sm font-poppins text-xneutral-200">
+                                admin@b-university.ac.id
+                            </p>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="bi bi-whatsapp text-xneutral-200"></i>
+                            <p class="text-sm font-poppins text-xneutral-200">
+                                +62 878-7777-9999
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4
+                        class="mb-10 text-lg font-semibold font-poppins text-xneutral-300"
+                    >
+                        Contact us
+                    </h4>
+                    <div class="max-h-24">
+                        <iframe
+                            class="w-full h-full"
+                            width="425"
+                            height="350"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=112.56847665939047%2C-8.011293427515094%2C112.66735361251547%2C-7.943378344876297&amp;layer=mapnik"
+                            style="border: 1px solid black"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr class="border-2 mt-14 border-xneutral-300" />
+                <p class="my-6 text-center font-poppins text-xneutral-200">
+                    Copyright © 2024 | B University
+                </p>
+            </div>
+        </footer>
+        <!-- END OF FOOTER SECTION -->
+    </body>
+</html>
