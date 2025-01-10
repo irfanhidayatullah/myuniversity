@@ -18,6 +18,7 @@ class FooterMiddleware
     {
         $datafooter = Footer::first();
         view()->share('datafooter', $datafooter);
+
         return $next($request);
     }
 }

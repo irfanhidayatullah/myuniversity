@@ -12,7 +12,6 @@ class SdmController extends Controller
     {
         $admins = Admin::all();
         $lectures = Lecture::all();
-
-        return view('sdm', compact('admins','lectures'));
+        return view('sdm', compact('admins', 'lectures'));
     }
 }

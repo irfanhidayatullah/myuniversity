@@ -11,6 +11,6 @@ class FasilitasController extends Controller
     {
         $facilities = Facility::all();
 
-        return view('facilities', compact('facilities'));
+        return view('fasilitas', compact('facilities'));
     }
 }

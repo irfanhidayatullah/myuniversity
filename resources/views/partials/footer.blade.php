@@ -1,12 +1,12 @@
+<!-- FOOTER SECTION -->
 <footer class="w-full pt-20 mt-14">
     <div class="container grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-36">
         <div>
-            {{-- <img class="mb-10" src="{{ asset('assets/images/B-Uni.png') }}" alt="Logo B-Universitas" /> --}}
             <img class="mb-10"
                 src="{{ $datafooter->image ? Storage::url($datafooter->image) : asset('/assets/images/B-Uni.png') }}"
                 alt="Logo B-Universitas" />
             <p class="mb-6 text-sm text-medium text-xneutral-200 font-poppins">
-                Lihat Perkembangan kami diakun sosial media
+                Ikuti akun sosial media kami untuk informasi lebih lanjut
             </p>
             <div class="flex items-center gap-11">
                 <a href="{{ $datafooter->link_instagram ?? 'null' }}"
@@ -29,7 +29,7 @@
         </div>
         <div>
             <h4 class="mb-10 text-lg font-semibold font-poppins text-xneutral-300">
-                Contact us
+                Kontak kami
             </h4>
             <div class="space-y-6">
                 <div class="flex gap-4">
@@ -54,7 +54,7 @@
         </div>
         <div>
             <h4 class="mb-10 text-lg font-semibold font-poppins text-xneutral-300">
-                Contact us
+                Temukan kami
             </h4>
             <div class="max-h-24">
                 <a href="{{ $datafooter->link_gmaps ?? 'null' }}" target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,8 @@
     <div class="container">
         <hr class="border-2 mt-14 border-xneutral-300" />
         <p class="my-6 text-center font-poppins text-xneutral-200">
-            Copyright © 2024 | B University
+            Copyright © 2025 | My University | Irfan Hidayatullah
         </p>
     </div>
 </footer>
+<!-- END OF FOOTER SECTION -->

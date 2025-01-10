@@ -9,8 +9,8 @@ class SambutanController extends Controller
 {
     public function index()
     {
-        $greeting = Greeting::all();
+        $greetings = Greeting::all();
 
-        return view('sambutan', compact('greeting'));
+        return view('sambutan', compact('greetings'));
     }
 }

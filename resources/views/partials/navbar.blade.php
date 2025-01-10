@@ -1,8 +1,10 @@
+<!-- NAVIGATION -->
 <header class="fixed top-0 z-50 w-full bg-white">
     <nav class="container flex items-center justify-between py-5">
         <div>
-            <a href="{{route("/")}}">
-                <img src="{{asset("assets/images/B-Uni.png")}}" height="60" class="max-h-[60px]" alt="" />
+            <a href="{{ route('index') }}">
+                <img src="{{ asset('assets/images/MyUniversity - Logo.png') }}" height="60" class="max-h-[60px]"
+                    alt="" />
             </a>
         </div>
         <ul class="items-center hidden list-none md:flex gap-9 font-montserrat">
@@ -15,24 +17,19 @@
                     class="absolute hidden overflow-hidden shadow-xl peer-hover:block hover:block group-hover:block rounded-xl top-full w-fit">
                     <div class="pt-12">
                         <ul class="p-3 pl-8 list-disc bg-white text-nowrap rounded-xl">
-                            <li>
-                                <a href="{{route("sejarah")}}" class="block w-full py-1 pl-2 pr-8">Sejarah</a>
+                            <li><a href="{{ route('sejarah') }}" class="block w-full py-1 pl-2 pr-8">Sejarah</a></li>
+                            <li><a href="{{ route('visimisi') }}" class="block w-full py-1 pl-2 pr-8">Visi & Misi</a>
                             </li>
-                            <li>
-                                <a href="{{route("visimisi")}}" class="block w-full py-1 pl-2 pr-8">Visi & Misi</a>
-                            </li>
-                            <li>
-                                <a href="{{route("sambutan")}}" class="block w-full py-1 pl-2 pr-8">Sambutan Rektor</a>
-                            </li>
-                            <li>
-                                <a href="{{route("fasilitas")}}" class="block w-full py-1 pl-2 pr-8">Fasilitas</a>
+                            <li><a href="{{ route('sambutan') }}" class="block w-full py-1 pl-2 pr-8">Sambutan
+                                    Rektor</a></li>
+                            <li><a href="{{ route('fasilitas') }}" class="block w-full py-1 pl-2 pr-8">Fasilitas</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </li>
             <li>
-                <a href="{{route("sdm")}}" class="font-semibold">SDM</a>
+                <a href="{{ route('sdm') }}" class="font-semibold">SDM</a>
             </li>
             <li class="relative flex items-center h-full group">
                 <div class="flex items-center gap-1.5 x-dropdown-button cursor-pointer peer">
@@ -56,7 +53,8 @@
                                         <a href="#" class="block w-full py-1 pl-2 pr-8">S1 FARMASI</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block w-full py-1 pl-2 pr-8">S1 ADMINISTRASI RUMAH SAKIT</a>
+                                        <a href="#" class="block w-full py-1 pl-2 pr-8">S1 ADMINISTRASI RUMAH
+                                            SAKIT</a>
                                     </li>
                                     <li>
                                         <a href="#" class="block w-full py-1 pl-2 pr-8">D3 KEBIDANAN</a>
@@ -114,11 +112,11 @@
                 </div>
             </li>
             <li>
-                <a href="{{route("pengumuman")}}" class="font-semibold">Pengumuman</a>
+                <a href="{{ route('pengumuman') }}" class="font-semibold">Pengumuman</a>
             </li>
         </ul>
         <div class="hidden md:flex">
-            <a href="{{route("pendaftaran")}}"
+            <a href="{{ route('pendaftaran') }}"
                 class="px-6 py-[14px] font-montserrat font-semibold text-xneutral-0 bg-primary-200 rounded-full">Pendaftaran</a>
         </div>
 
@@ -151,24 +149,19 @@
                 <div class="hidden x-dropdown-menu" id="menu1">
                     <div>
                         <ul class="px-3 bg-white text-nowrap rounded-xl">
-                            <li>
-                                <a href="{{route("sejarah")}}" class="block w-full py-1 pl-2 pr-8">Sejarah</a>
+                            <li><a href="{{ route('sejarah') }}" class="block w-full py-1 pl-2 pr-8">Sejarah</a></li>
+                            <li><a href="{{ route('visimisi') }}" class="block w-full py-1 pl-2 pr-8">Visi & Misi</a>
                             </li>
-                            <li>
-                                <a href="{{route("visimisi")}}" class="block w-full py-1 pl-2 pr-8">Visi & Misi</a>
-                            </li>
-                            <li>
-                                <a href="{{route("sambutan")}}" class="block w-full py-1 pl-2 pr-8">Sambutan Rektor</a>
-                            </li>
-                            <li>
-                                <a href="{{route("fasilitas")}}" class="block w-full py-1 pl-2 pr-8">Fasilitas</a>
+                            <li><a href="{{ route('sambutan') }}" class="block w-full py-1 pl-2 pr-8">Sambutan
+                                    Rektor</a></li>
+                            <li><a href="{{ route('fasilitas') }}" class="block w-full py-1 pl-2 pr-8">Fasilitas</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </li>
             <li>
-                <a href="{{route("sdm")}}" class="font-semibold">SDM</a>
+                <a href="{{ route('sdm') }}" class="font-semibold">SDM</a>
             </li>
             <li class="w-full h-full">
                 <div class="flex items-center w-full justify-between gap-1.5 x-dropdown-button cursor-pointer"
@@ -193,7 +186,8 @@
                                     <a href="#" class="block w-full py-1 pl-2 pr-8">S1 FARMASI</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block w-full py-1 pl-2 pr-8">S1 ADMINISTRASI RUMAH SAKIT</a>
+                                    <a href="#" class="block w-full py-1 pl-2 pr-8">S1 ADMINISTRASI RUMAH
+                                        SAKIT</a>
                                 </li>
                                 <li>
                                     <a href="#" class="block w-full py-1 pl-2 pr-8">D3 KEBIDANAN</a>
@@ -254,8 +248,9 @@
                 </div>
             </li>
             <li>
-                <a href="{{route("pengumuman")}}" class="font-semibold">Pengumuman</a>
+                <a href="{{ route('pengumuman') }}" class="font-semibold">Pengumuman</a>
             </li>
         </ul>
     </div>
 </header>
+<!-- END OF NAVIGATION -->
