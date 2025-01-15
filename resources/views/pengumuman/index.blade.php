@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <article class="container mt-28">
+    <article class="container mt-28 min-h-[90vh] relative">
         <h1 class="text-xl font-semibold text-xneutral-400 font-montserrat sm:text-2xl">
             Pengumuman
         </h1>

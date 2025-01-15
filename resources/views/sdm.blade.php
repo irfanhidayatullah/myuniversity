@@ -65,7 +65,7 @@
             Tenaga Kependidikan
         </h1>
         <p class="text-sm font-semibold text-xneutral-200 font-montserrat sm:text-base">
-            Tendik B-University
+            My University
         </p>
 
         @if ($admins->isEmpty())
