@@ -16,8 +16,9 @@
                 </h2>
                 <div class="flex items-center gap-[18px] font-montserrat text-xs text-xneutral-200 font-semibold">
                     <div class="flex gap-[10px] items-center">
-                        <img src="/assets/images/profile-picture.png" alt="Admin" />
-                        <span>by <span class="text-xneutral-400">{{ $berita->user->name }}</span></span>
+                            <img src="/assets/images/profile-picture.png" alt="Admin" style="width: 30px; height: 30px;"/>
+                        <span>by <span
+                                class="text-xneutral-400">{{ $berita->user ? $berita->user->name : 'Penulis' }}</span></span>
                     </div>
                     <span>{{ \Carbon\Carbon::parse($berita->created_at)->format('d F Y') }}</span>
                 </div>

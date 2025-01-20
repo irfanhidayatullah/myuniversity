@@ -12,6 +12,10 @@ class NewsController extends Controller
     {
         $berita = News::where('slug', $slug)->first();
 
+        if (!$berita) {
+            abort(404, 'Berita tidak ditemukan');
+        }
+
         return view('berita/show', compact('berita'));
     }
 }

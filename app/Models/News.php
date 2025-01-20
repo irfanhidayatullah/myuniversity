@@ -10,15 +10,15 @@ class News extends Model
     use HasFactory;
 
     protected $fillable = [
-        "title",
-        "content",
-        "image",
-        "user_id",
-        "slug",
+        'title',
+        'content',
+        'image',
+        'users_id',
+        'slug',
     ];
 
     public function user()
     {
-        return $this->belongsTo(User::class, "users_id");
+        return $this->belongsTo(User::class, 'users_id');
     }
 }

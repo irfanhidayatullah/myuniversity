@@ -2,7 +2,6 @@
 
 namespace App\Filament\Resources;
 
-use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 use App\Filament\Resources\NewsResource\Pages;
 use App\Filament\Resources\NewsResource\RelationManagers;
 use App\Models\News;
@@ -16,6 +15,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 use Filament\Forms\Set;
 use Illuminate\Support\Str;
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+
 class NewsResource extends Resource
 {
     protected static ?string $model = News::class;
@@ -27,9 +28,9 @@ class NewsResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')
-                    ->live(debounce: 1000)
+                    ->live(debounce:1000)
                     ->debounce(1000)
-                    ->afterStateUpdated(fn(Set $set, ?string $state) => $set("slug", Str::slug($state)))
+                    ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state)))
                     ->required(),
                 Forms\Components\TextInput::make('slug')
                     ->required(),
@@ -38,9 +39,8 @@ class NewsResource extends Resource
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
                     ->required()
-                    ->image()
                     ->columnSpanFull(),
-                Forms\Components\TextInput::make('user_id')
+                Forms\Components\TextInput::make('users_id')
                     ->default(auth()->user()->id)
                     ->readOnly(),
             ]);
